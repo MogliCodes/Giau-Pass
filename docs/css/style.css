@@ -1,0 +1,156 @@
+html{
+  font-size: 10px;
+}
+
+body{
+  font-family: 'Public Sans', sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.text-large{
+  font-size: 2.4rem;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.panel-full-height{
+  min-height: 100vh;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* .fixed-bg-container{
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+} */
+
+.fixed-bg-container{
+  position: relative;
+}
+
+.fixed-bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fixed-bg-init{
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -2;
+}
+
+.fixed-bg-blur{
+  background-image: url("../img/bg_blur.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.fixed-bg-blur.active{
+  opacity: .95;
+}
+
+
+
+#start * {
+  color: #fff;
+}
+
+#start h1{
+  text-shadow: rgba(240,140,60,.25) 1px 1px 10px;
+}
+
+#description * {
+  color: #fff;
+}
+
+
+/* XS */
+@media(max-width: 374px){
+  .container{
+    width: 85%;
+  }
+  h1, h2, h3, h4, h5, h6, p,
+  .text-large {
+    font-size: 1.6rem;
+  }
+}
+/* S */
+@media(min-width: 375px){
+  .container{
+    width: 320px;
+  }
+  h1{
+    font-size: 3.2rem;
+  }
+  h4, h5, h6, p,
+  .text-large {
+    font-size: 1.6rem;
+  }
+}
+
+@media(min-width: 425px){
+
+}
+
+/* M */
+@media(min-width: 768px){
+  .container{
+    width: 650px;
+  }
+  h1{
+    font-size: 4.8rem;
+  }
+  .text-large{
+    font-size: 2.4rem;
+  }
+}
+
+/* L */
+@media(min-width: 1024px){
+  .container{
+    width: 850px;
+  }
+
+}
+
+/* XL */
+@media(min-width: 1440px){
+  .container{
+    width: 1280px;
+  }
+  h1{
+    font-size: 6.4rem;
+  }
+
+  p{
+    font-size: 2.4rem;
+  }
+  .text-large{
+    font-size: 3.2rem;
+  }
+}
